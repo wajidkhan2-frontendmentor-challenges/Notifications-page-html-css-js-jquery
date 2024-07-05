@@ -9,7 +9,7 @@ desktop view\
 ![](./Screenshots/desktop.png)
 
 ### Demo
-[click Me]()
+[click Me](https://wajidkhan2-frontendmentor-challenges.github.io/Notifications-page-html-css-js-jquery/)
 
 ### Built with
 - Mobile-first workflow
