@@ -1,0 +1,73 @@
+:root {
+
+    /* primary */
+    --clr-prim-1: hsl(1, 90%, 64%); /* Red */
+    --clr-prim-2: hsl(219, 85%, 26%); /* Blue */
+
+    /* neutral */
+    --clr-neut-1: hsl(0, 0%, 100%) ; /* White */
+    --clr-neut-2: hsl(210, 60%, 98%) ; /* Very light grayish blue */
+    --clr-neut-3: hsl(211, 68%, 94%) ; /* Light grayish blue 1 */
+    --clr-neut-4: hsl(205, 33%, 90%) ; /* Light grayish blue 2 */
+    --clr-neut-5: hsl(219, 14%, 63%) ; /* Grayish blue: hsl */
+    --clr-neut-6: hsl(219, 12%, 42%) ; /* Dark grayish blue */
+    --clr-neut-7: hsl(224, 21%, 14%) ; /* Very dark blue: */
+
+    --ff: "Plus Jakarta Sans", sans-serif;
+    --fs: 1rem; /* 16px */
+    --fw-medium: 500; /* medium */
+    --fw-bolder: 800; /* extrabold */
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--ff);
+    background-color: var(--clr-neut-2);
+}
+
+
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+h1,p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+button {
+    font-family: inherit;
+}
+
+.notifications-section {
+    box-sizing: border-box;
+    padding: 1rem;
+    font-family: var(--ff);
+    font-weight: var(--fw-medium);
+    font-size: 0.938rem;
+    color: var(--clr-neut-7);
+    background-color: var(--clr-neut-1);
+    border-radius: 20px ;
+    box-shadow: 6px -1px 76px -33px var(--clr-neut-2);
+
+    max-width: 45.188rem;
+}
+
+@media only screen and (min-width: 69.375em ) /* min-width:  1110px */ {
+    .notifications-section {
+        padding: 1.875rem;
+        font-size: 1rem;
+    }
+}

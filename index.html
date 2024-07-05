@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./static/globle.css">
+  <link rel="stylesheet" href="./static/layout.css">
+  <link rel="stylesheet" href="./static/style.css">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+</head>
+<body>
+
+
+
+	<div class="document-wrapper">
+		<!-- <header></header> -->
+		<main class="main">
+			<section class="notifications-section">
+				<div class="ntifs-header">
+					<h1 class="ntifs-title">
+						Notifications
+						<span id="unreadCounter" class="ntifs-number">0</span>
+					</h1>
+					<button id="markReadBtn" class="mark-read-btn">Mark all as read</button>
+				</div>
+
+				<ul class="notifications-list">
+					
+					<!-- Mark Webber -->
+					<li class="notify-item" data-visited="false" data-notification="">
+
+						<div class="notify-i-image-section">
+							<img src="./static/images/avatar-mark-webber.webp" alt="">
+						</div>
+
+						<div class="notify-content">
+
+							<div class="notify-content-text">
+								<p class="notify-content-text-detail">
+									<div class="notify-prof-action-postorgroupe">
+										<a class="notify-profilename" href="#">Mark Webber</a>
+										<span class="notify-action">reacted to your recent post</span>
+										<a class="notify-postorgroupe" href="#">My first tournament today!</a>
+									</div>
+									
+									<time class="notify-time">1m ago</time>
+								</p>
+							</div>
+
+						</div>
+
+					</li>
+
+					<!-- Angela Gray -->
+					<li class="notify-item" data-visited="false" data-notification="">
+
+						<div class="notify-i-image-section">
+							<img src="./static/images/avatar-angela-gray.webp" alt="">
+						</div>
+
+						<div class="notify-content">
+
+							<div class="notify-content-text">
+								<p class="notify-content-text-detail">
+									<div class="notify-prof-action-postorgroupe">
+										<a class="notify-profilename" href="#">Angela Gray</a>
+										<span class="notify-action">followed you</span>
+									</div>
+									
+									<time class="notify-time">5m ago</time>
+								</p>
+							</div>
+
+						</div>
+
+					</li>
+
+					<!-- Jacob Thompson -->
+					<li class="notify-item" data-visited="false" data-notification="">
+
+						<div class="notify-i-image-section">
+							<img src="./static/images/avatar-jacob-thompson.webp" alt="">
+						</div>
+
+						<div class="notify-content">
+
+							<div class="notify-content-text">
+								<p class="notify-content-text-detail">
+									<div class="notify-prof-action-postorgroupe">
+										<a class="notify-profilename" href="#">Jacob Thompson</a>
+										<span class="notify-action">has joined your group</span>
+										<a class="notify-postorgroupe" href="#">Chess Club</a>
+									</div>
+									
+									<time class="notify-time">1 day ago</time>
+								</p>
+							</div>
+
+						</div>
+
+					</li>
+
+					<!-- Rizky Hasanuddin -->
+					<li class="notify-item" data-visited="true" data-notification="">
+						
+						<div class="notify-i-image-section">
+							<img src="./static/images/avatar-rizky-hasanuddin.webp" alt="">
+						</div>
+
+						<div class="notify-content">
+
+							<div class="notify-content-text">
+								<p class="notify-content-text-detail">
+									<div class="notify-prof-action-postorgroupe">
+										<a class="notify-profilename" href="#">Rizky Hasanuddin</a>
+										<span class="notify-action">sent you a private message</span>
+									</div>
+									
+									<time class="notify-time">5 days ago</time>
+								</p>
+
+								<p class="notify-message">
+									<a href="#">
+										Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+										I'm already having lots of fun and improving my game. 
+									</a>
+								</p>
+							</div>
+
+						</div>
+
+					</li>
+					 
+					<!-- Kimberly Smith -->
+					<li class="notify-item" data-visited="true" data-notification="">
+
+						<div class="notify-i-image-section">
+							<img src="./static/images/avatar-kimberly-smith.webp" alt="">
+						</div>
+
+						<div class="notify-content">
+
+							<div class="notify-content-text">
+								<p class="notify-content-text-detail">
+									<div class="notify-prof-action-postorgroupe">
+										<a class="notify-profilename" href="#">Kimberly Smith</a>
+										<span class="notify-action">commented on your picture</span>
+									</div>
+
+									<time class="notify-time">1 week ago </time>
+								</p>
+							</div>
+
+							<div class="picturepost">
+								<a href="#" aria-label="post Kimberly Smith commented on">
+									<img src="./static/images/image-chess.webp" alt="">
+								</a>
+							</div>
+
+						</div>
+					</li>
+
+					  
+					
+					<!-- Nathan Peterson -->
+					<li class="notify-item" data-visited="true" data-notification="">
+
+						<div class="notify-i-image-section">
+							<img src="./static/images/avatar-nathan-peterson.webp" alt="">
+						</div>
+
+						<div class="notify-content">
+
+							<div class="notify-content-text">
+								<p class="notify-content-text-detail">
+									<div class="notify-prof-action-postorgroupe">
+										<a class="notify-profilename" href="#">Nathan Peterson</a>
+										<span class="notify-action">reacted to your recent post</span>
+										<a class="notify-postorgroupe" href="#">5 end-game strategies to increase your win rate</a>
+									</div>
+									
+									<time class="notify-time">2 weeks ago</time>
+								</p>
+							</div>
+
+						</div>
+
+					</li>
+
+					  
+	
+					<!-- Anna Kim -->
+					<li class="notify-item" data-visited="true" data-notification="">
+
+						<div class="notify-i-image-section">
+							<img src="./static/images/avatar-anna-kim.webp" alt="">
+						</div>
+
+						<div class="notify-content">
+
+							<div class="notify-content-text">
+								<p class="notify-content-text-detail">
+									<div class="notify-prof-action-postorgroupe">
+										<a class="notify-profilename" href="#">Anna Kim</a>
+										<span class="notify-action">left the group</span>
+										<a class="notify-postorgroupe" href="#">Chess Club</a>
+									</div>
+									
+									<time class="notify-time">2 weeks ago</time>
+								</p>
+							</div>
+
+						</div>
+
+					</li>
+
+				</ul>
+			</section>
+		</main>
+		<footer class="footer">
+			Challenge <a href="https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC" target="_blank">Notifications page</a> 
+			by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="https://github.com/wajidkhan2">wajidkhan2</a>.
+		</footer>
+	</div>
+
+	<script src="./static/js/jquery-3.7.1.js"></script>
+	<script src="./static/js/main.js"></script>
+<!-- 
+	Notifications 3
+
+	Mark all as read
+
+	Mark Webber reacted to your recent post My first tournament today!
+	1m ago
+
+	Angela Gray followed you
+	5m ago
+
+	Jacob Thompson has joined your group Chess Club
+	1 day ago
+
+	Rizky Hasanuddin sent you a private message
+	5 days ago
+	Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+	I'm already having lots of fun and improving my game.
+
+	Kimberly Smith commented on your picture
+	1 week ago
+
+	Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
+	2 weeks ago
+
+	Anna Kim left the group Chess Club
+	2 weeks ago
+
+	<div class="attribution">
+
+	</div> 
+-->
+</body>
+</html>
+
